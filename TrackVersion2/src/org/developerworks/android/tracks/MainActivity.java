@@ -57,28 +57,31 @@ public class MainActivity extends Activity {
 
 	/** Called when the user clicks the Run button */
 	public void run(View view) {
-		//Create new Intent
-		Log.i("Run Method", "Got here!");
-		Intent intent = new Intent(this, CameraOverlay.class);
-
-
-		//Add all details to intent
-		intent.putExtra(LOCATION, location.toString());
-		intent.putExtra(DIRECTION, "TBCoded");
-		intent.putExtra(TRACK, "TBCoded");
-
-		//Create Toast to show what we're about to try display
-		Log.i("Run Method", "Toasty");
-		Context context = getApplicationContext();
-		CharSequence text = "Current Location - " + location.toString();
-		int duration = Toast.LENGTH_SHORT;
-
-		Toast toast = Toast.makeText(context, text, duration);
-		toast.show();
-
-		//Start new activity (aka sending details to MetLink)
-		Log.i("Run Method", "Starting activity");
+		Intent intent = new Intent(this, MapView.class);
 		startActivity(intent);
+		
+//		//Create new Intent
+//		Log.i("Run Method", "Got here!");
+//		Intent intent = new Intent(this, CameraOverlay.class);
+//
+//
+//		//Add all details to intent
+//		intent.putExtra(LOCATION, location.toString());
+//		intent.putExtra(DIRECTION, "TBCoded");
+//		intent.putExtra(TRACK, "TBCoded");
+//
+//		//Create Toast to show what we're about to try display
+//		Log.i("Run Method", "Toasty");
+//		Context context = getApplicationContext();
+//		CharSequence text = "Current Location - " + location.toString();
+//		int duration = Toast.LENGTH_SHORT;
+//
+//		Toast toast = Toast.makeText(context, text, duration);
+//		toast.show();
+//
+//		//Start new activity (aka sending details to MetLink)
+//		Log.i("Run Method", "Starting activity");
+//		startActivity(intent);
 	}
 
 }

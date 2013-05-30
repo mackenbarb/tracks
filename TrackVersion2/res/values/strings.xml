@@ -4,5 +4,8 @@
     <string name="app_name">Tracks</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_camera_overlay">CameraOverlay</string>
+    <string name="title_activity_map_view">MapView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_track_selection">Track Selection</string>
 
 </resources>
